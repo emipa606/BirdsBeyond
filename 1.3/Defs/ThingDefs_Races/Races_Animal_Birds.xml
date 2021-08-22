@@ -12,14 +12,13 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
 		<race>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<body>Bird</body>
 			<predator>true</predator>
 			<baseBodySize>0.32</baseBodySize>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>0.42</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<leatherDef>Leather_Light</leatherDef>
 			<wildness>0</wildness>
 			<petness>1</petness>
 			<trainability>None</trainability>
