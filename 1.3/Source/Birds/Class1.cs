@@ -2,11 +2,13 @@
 using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
+using Verse.Sound;
 
 namespace Birds
 {
@@ -20,6 +22,7 @@ namespace Birds
 
         public List<GraphicData> flyingFemaleBodyGraphicData;
 
+        public SoundDef soundOnFly;
         public override void ResolveReferences(ThingDef parentDef)
         {
             base.ResolveReferences(parentDef);
@@ -48,6 +51,7 @@ namespace Birds
     {
         public CompProperties_FlyingPawn Props => base.props as CompProperties_FlyingPawn;
     }
+
     [StaticConstructorOnStartup]
     public static class Core
     {
@@ -68,8 +72,6 @@ namespace Birds
         }
         public static void SetGraphic(this Pawn pawn, GraphicData graphicData)
         {
-            Log.Message("pawn.Drawer.renderer.graphics.nakedGraphic: " + pawn.Drawer.renderer.graphics.nakedGraphic);
-            Log.Message("Shader: " + pawn.Drawer.renderer.graphics.nakedGraphic?.Shader);
             pawn.Drawer.renderer.graphics.nakedGraphic = GraphicDatabase.Get(graphicData.graphicClass, graphicData.texPath, graphicData.shaderType?.Shader ?? ShaderDatabase.CutoutComplex, graphicData.drawSize, graphicData.color, graphicData.colorTwo);
             PortraitsCache.SetDirty(pawn);
             PortraitsCache.PortraitsCacheUpdate();
@@ -96,6 +98,11 @@ namespace Birds
                     else
                     {
                         ___pawn.SetGraphic(comp.Props.flyingFemaleBodyGraphicData[curKindLifeStageInd]);
+                    }
+                    if (comp.Props.soundOnFly != null)
+                    {
+                        SoundInfo info = SoundInfo.InMap(new TargetInfo(___pawn.PositionHeld, ___pawn.MapHeld));
+                        comp.Props.soundOnFly.PlayOneShot(info);
                     }
                 }
             }
