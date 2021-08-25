@@ -37,8 +37,7 @@
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>0.42</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<wildness>0</wildness>
-			<petness>1</petness>
+			<wildness>1</wildness>
 			<trainability>None</trainability>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -76,62 +75,38 @@
 		</race>
 		<tradeTags>
 			<li>AnimalCommon</li>
-			<li>AnimalPet</li>
 		</tradeTags>
-		<tools>
-			<li>
-				<label>left talon</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>right talon</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>7</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<chanceFactor>0.7</chanceFactor>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>14</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-
-		</tools>
+    <tools>
+      <li>
+        <label>talons</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
 		<comps>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
@@ -259,7 +234,9 @@
     </comps>
     <race>
       <body>Bird</body>
-      <baseHungerRate>0.20</baseHungerRate>
+      <predator>true</predator>
+	  <maxPreyBodySize>0.3</maxPreyBodySize>
+	  <baseHungerRate>0.20</baseHungerRate>
       <baseBodySize>0.6</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
@@ -384,10 +361,10 @@
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>BB_EagleOwl</defName>
     <label>eagle owl</label>
-    <labelMale>rooster</labelMale>
-    <labelFemale>hen</labelFemale>
-    <race>Chicken</race>
-    <combatPower>30</combatPower>
+    <labelMale>eagle owl</labelMale>
+    <labelFemale>eagle owl</labelFemale>
+    <race>BB_EagleOwl</race>
+    <combatPower>60</combatPower>
     <ecoSystemWeight>0.30</ecoSystemWeight>
     <lifeStages>
       <li>
