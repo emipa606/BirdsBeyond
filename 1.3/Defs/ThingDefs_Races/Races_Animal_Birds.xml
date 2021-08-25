@@ -1,6 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+  <SoundDef>
+    <defName>Pawn_Bird_BarnOwl_Fly</defName>
+    <context>MapOnly</context>    
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn/Animal/BarnOwl/WingFlap</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~35</volumeRange>
+        <pitchRange>0.9311765~1.091765</pitchRange>
+        <distRange>0~70</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>Bird_BarnOwl</defName>
 		<label>barn owl</label>
@@ -117,6 +135,7 @@
 		<comps>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
+				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
 				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
 				<flyingBodyGraphicData>
 					<li>
