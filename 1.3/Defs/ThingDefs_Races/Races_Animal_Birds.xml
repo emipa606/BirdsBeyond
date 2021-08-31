@@ -661,7 +661,7 @@
 	  <baseHungerRate>0.15</baseHungerRate>
       <baseBodySize>0.4</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
-      <foodType>Herbivore</foodType>
+      <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>Leather_Bird</leatherDef>
       <trainability>Intermediate</trainability>
       <wildness>0.2</wildness>
