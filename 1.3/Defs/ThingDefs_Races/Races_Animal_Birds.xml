@@ -117,6 +117,8 @@
       </li>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
+				<flyWhenWanderingChance>0.5</flyWhenWanderingChance>
+				<flyWhenHunting>true</flyWhenHunting>
 				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
 				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
 				<flyingBodyGraphicData>
