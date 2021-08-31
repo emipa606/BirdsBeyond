@@ -124,7 +124,7 @@
     <comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
-        <hatcherPawn>BB_Kestrel</hatcherPawn>
+        <hatcherPawn>BB_Crow</hatcherPawn>
       </li>
     </comps>
   </ThingDef>

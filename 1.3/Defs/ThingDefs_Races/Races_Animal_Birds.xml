@@ -72,9 +72,9 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>Pawn_Chicken_Injured</soundWounded>
+					<soundWounded>Pawn_Chicken_Wounded</soundWounded>
 					<soundDeath>Pawn_Chicken_Death</soundDeath>
-					<soundCall>Pawn_Chicken_Call_Call</soundCall>
+					<soundCall>Pawn_Chicken_Call</soundCall>
 					<soundAngry>Pawn_Chicken_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
@@ -172,7 +172,7 @@
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BB_BarnOwl</defName>
 		<label>barn owl</label>
-		<race>Bird_BarnOwl</race>
+		<race>BB_BarnOwl</race>
 		<combatPower>35</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<lifeStages>
@@ -223,7 +223,6 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_EagleOwl</defName>
     <label>eagle owl</label>
-    <devNote>EagleOwl</devNote>
     <description>A common and big owl. It is known for it's distinct call and feather ears.</description>
     <statBases>
       <MoveSpeed>2.1</MoveSpeed>
@@ -600,7 +599,7 @@
         </dessicatedBodyGraphicData>
       </li>
       <li>
-        <labelMale>eagle owl</labelMale>
+        <labelMale>kestrel</labelMale>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
           <drawSize>0.6</drawSize>
