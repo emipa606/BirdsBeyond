@@ -26,7 +26,7 @@
         <TemperateForest>0.3</TemperateForest>
         <BorealForest>0.2</BorealForest>
       </wildBiomes>
-      <trainability>None</trainability>
+      <trainability>Intermediate</trainability>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -220,7 +220,7 @@
       <baseHealthScale>1</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>Leather_Bird</leatherDef>
-      <trainability>None</trainability>
+      <trainability>Intermediate</trainability>
       <wildness>0.7</wildness>
       <wildBiomes>
         <TemperateForest>0.3</TemperateForest>
