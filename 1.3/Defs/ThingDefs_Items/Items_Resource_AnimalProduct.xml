@@ -48,7 +48,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EggFertBase">
-    <defName>EagleOwlFertilized</defName>
+    <defName>EggEagleOwlFertilized</defName>
     <label>eagle owl egg (fert.)</label>
     <description>A fertilized eagle owl egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -68,7 +68,7 @@
 <!-- Kestrel -->
 
   <ThingDef ParentName="EggUnfertBase">
-    <defName>KestrelUnfertilized</defName>
+    <defName>EggKestrelUnfertilized</defName>
     <label>kestrel egg (unfert.)</label>
     <description>An unfertilized kestrel egg. It can be eaten raw, but it's much, much better cooked.</description>
     <graphicData>
@@ -80,7 +80,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EggFertBase">
-    <defName>KestrelFertilized</defName>
+    <defName>EggKestrelFertilized</defName>
     <label>kestrel egg (fert.)</label>
     <description>A fertilized kestrel egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
@@ -100,7 +100,7 @@
  <!-- Crow -->
 
   <ThingDef ParentName="EggUnfertBase">
-    <defName>CrowUnfertilized</defName>
+    <defName>EggCrowUnfertilized</defName>
     <label>crow egg (unfert.)</label>
     <description>An unfertilized crow egg. It can be eaten raw, but it's much, much better cooked.</description>
     <graphicData>
@@ -112,7 +112,7 @@
   </ThingDef>
 
   <ThingDef ParentName="EggFertBase">
-    <defName>CrowFertilized</defName>
+    <defName>EggCrowFertilized</defName>
     <label>crow egg (fert.)</label>
     <description>A fertilized crow egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>

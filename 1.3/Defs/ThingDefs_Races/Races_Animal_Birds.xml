@@ -7,7 +7,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Pawn/Animal/Bird/WingFlap</clipPath>
+            <clipPath>Pawn/Animal/BarnOwl/WingFlap</clipPath>
           </li>
         </grains>
         <volumeRange>25~35</volumeRange>
@@ -31,15 +31,6 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
-	<comps>
-      <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>EggBarnOwlUnfertilized</eggUnfertilizedDef>
-        <eggFertilizedDef>EggBarnOwlFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>15</eggLayIntervalDays>
-        <eggCountRange>3</eggCountRange>
-      </li>
-    </comps>
 		<race>
 			<body>Bird</body>
 			<predator>true</predator>
@@ -117,6 +108,13 @@
       </li>
     </tools>
 		<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggBarnOwlUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggBarnOwlFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>3</eggCountRange>
+      </li>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
 				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
@@ -231,15 +229,6 @@
       <ComfyTemperatureMin>-15</ComfyTemperatureMin>
       <FilthRate>3</FilthRate>
     </statBases>
-    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>EggEagleOwlUnfertilized</eggUnfertilizedDef>
-        <eggFertilizedDef>EggEagleOwlFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>15</eggLayIntervalDays>
-        <eggCountRange>3</eggCountRange>
-      </li>
-    </comps>
     <race>
       <body>Bird</body>
       <predator>true</predator>
@@ -315,6 +304,13 @@
       </li>
     </tools>
 			<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggEagleOwlUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggEagleOwlFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>3</eggCountRange>
+      </li>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
 				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
@@ -443,15 +439,6 @@
       <ComfyTemperatureMin>-15</ComfyTemperatureMin>
       <FilthRate>2.8</FilthRate>
     </statBases>
-    <comps>
-      <li Class="CompProperties_EggLayer">
-        <eggUnfertilizedDef>EggKestrelUnfertilized</eggUnfertilizedDef>
-        <eggFertilizedDef>EggKestrelfertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>15</eggLayIntervalDays>
-        <eggCountRange>3</eggCountRange>
-      </li>
-    </comps>
     <race>
       <body>Bird</body>
       <predator>true</predator>
@@ -527,6 +514,13 @@
       </li>
     </tools>
 			<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggKestrelUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggKestrelFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>3</eggCountRange>
+      </li>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
 				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
