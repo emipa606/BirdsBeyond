@@ -27,6 +27,7 @@
         <BorealForest>0.2</BorealForest>
       </wildBiomes>
       <trainability>Intermediate</trainability>
+      <useMeatFrom>Chicken</useMeatFrom>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -228,6 +229,7 @@
       </wildBiomes>
       <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
+      <useMeatFrom>Chicken</useMeatFrom>
       <lifeExpectancy>15</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -440,6 +442,7 @@
       </wildBiomes>
       <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
+      <useMeatFrom>Chicken</useMeatFrom>
       <lifeExpectancy>15</lifeExpectancy>
       <lifeStageAges>
         <li>
@@ -642,13 +645,14 @@
       <baseHealthScale>0.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Bird</leatherDef>
-      <trainability>Intermediate</trainability>
+      <trainability>Advanced</trainability>
       <wildness>0.2</wildness>
       <wildBiomes>
         <TemperateForest>0.6</TemperateForest>
         <BorealForest>0.4</BorealForest>
       </wildBiomes>
       <mateMtbHours>8</mateMtbHours>
+      <useMeatFrom>Chicken</useMeatFrom>
       <lifeExpectancy>15</lifeExpectancy>
       <lifeStageAges>
         <li>
