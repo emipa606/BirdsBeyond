@@ -1,70 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- Barn Owl -->
+  <!-- Barn Owl -->
 
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>BB_BarnOwl</defName>
-		<label>barn owl</label>
-		<devNote>owl</devNote>
-		<description>.</description>
-		<statBases>
-			<MoveSpeed>4</MoveSpeed>
-			<MarketValue>100</MarketValue>
-			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-		</statBases>
-		<race>
-			<body>Bird</body>
-			<predator>true</predator>
-			<baseBodySize>0.4</baseBodySize>
-			<maxPreyBodySize>0.3</maxPreyBodySize>
-			<baseHungerRate>0.15</baseHungerRate>
-			<baseHealthScale>0.42</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<wildness>0.7</wildness>
-			  <wildBiomes>
-				<TemperateForest>0.3</TemperateForest>
-				<BorealForest>0.2</BorealForest>
-			</wildBiomes>
-			<trainability>None</trainability>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Chick_Call</soundWounded>
-					<soundDeath>Pawn_Chick_Call</soundDeath>
-					<soundCall>Pawn_Chick_Call</soundCall>
-					<soundAngry>Pawn_Chick_Call</soundAngry>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.15</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.4</minAge>
-					<soundWounded>Pawn_Bird_BarnOwl_Call</soundWounded>
-					<soundCall>Pawn_Bird_BarnOwl_Call</soundCall>
-					<soundAngry>Pawn_Bird_BarnOwl_Call</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalCommon</li>
-		</tradeTags>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BB_BarnOwl</defName>
+    <label>barn owl</label>
+    <devNote>owl</devNote>
+    <description>.</description>
+    <statBases>
+      <MoveSpeed>4</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+    </statBases>
+    <race>
+      <body>Bird</body>
+      <predator>true</predator>
+      <baseBodySize>0.4</baseBodySize>
+      <maxPreyBodySize>0.3</maxPreyBodySize>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseHealthScale>0.42</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+      <wildness>0.7</wildness>
+      <wildBiomes>
+        <TemperateForest>0.3</TemperateForest>
+        <BorealForest>0.2</BorealForest>
+      </wildBiomes>
+      <trainability>None</trainability>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(3, 0.7)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Chick_Call</soundWounded>
+          <soundDeath>Pawn_Chick_Call</soundDeath>
+          <soundCall>Pawn_Chick_Call</soundCall>
+          <soundAngry>Pawn_Chick_Call</soundAngry>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Bird_BarnOwl_Call</soundWounded>
+          <soundCall>Pawn_Bird_BarnOwl_Call</soundCall>
+          <soundAngry>Pawn_Bird_BarnOwl_Call</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
     <tools>
       <li>
         <label>talons</label>
@@ -96,7 +96,7 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-		<comps>
+    <comps>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>EggBarnOwlUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>EggBarnOwlFertilized</eggFertilizedDef>
@@ -104,110 +104,101 @@
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggCountRange>3</eggCountRange>
       </li>
-			<li Class="Birds.CompProperties_FlyingPawn">
-				<flyWhenFleeing>true</flyWhenFleeing>
-				<flyWhenWanderingChance>0.5</flyWhenWanderingChance>
-				<flyWhenHunting>true</flyWhenHunting>
-				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
-				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
-				<flyingBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
+      <li Class="Birds.CompProperties_FlyingPawn">
+        <flyWhenFleeing>true</flyWhenFleeing>
+        <flyWhenWanderingChance>0.5</flyWhenWanderingChance>
+        <flyWhenHunting>true</flyWhenHunting>
+        <soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
+        <flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
+        <flyingBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
+            <drawSize>0.6</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
+            <drawSize>0.8</drawSize>
+          </li>
+          <li>
 
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
+            <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
+            <drawSize>1.0</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
 
-					</li>
-				</flyingBodyGraphicData>
-				<flyingFemaleBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</li>
-				</flyingFemaleBodyGraphicData>
-			</li>
-		</comps>
-	</ThingDef>
+          </li>
+        </flyingBodyGraphicData>
+        <flyingFemaleBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
+            <drawSize>0.6</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
+            <drawSize>0.8</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
+            <drawSize>1.0</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+          </li>
+        </flyingFemaleBodyGraphicData>
+      </li>
+    </comps>
+  </ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BB_BarnOwl</defName>
-		<label>barn owl</label>
-		<race>BB_BarnOwl</race>
-		<combatPower>40</combatPower>
-		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<label>barn owl</label>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
-					<drawSize>0.6</drawSize>
-					<color>(189,171,159)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>0.6</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
-					<drawSize>0.8</drawSize>
-					<color>(189,171,159)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>0.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
-					<drawSize>1.0</drawSize>
-					<color>(189,171,159)</color>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>1.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BB_BarnOwl</defName>
+    <label>barn owl</label>
+    <race>BB_BarnOwl</race>
+    <combatPower>40</combatPower>
+    <ecoSystemWeight>0.3</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>barn owl</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
+          <drawSize>1.0</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
 
 
-<!-- Eagle Owl -->
+  <!-- Eagle Owl -->
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_EagleOwl</defName>
@@ -223,18 +214,18 @@
     <race>
       <body>Bird</body>
       <predator>true</predator>
-	  <maxPreyBodySize>0.3</maxPreyBodySize>
-	  <baseHungerRate>0.20</baseHungerRate>
+      <maxPreyBodySize>0.3</maxPreyBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
       <baseBodySize>0.6</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-	  <leatherDef>Leather_Bird</leatherDef>
+      <leatherDef>Leather_Bird</leatherDef>
       <trainability>None</trainability>
       <wildness>0.7</wildness>
-	        <wildBiomes>
-				<TemperateForest>0.3</TemperateForest>
-				<BorealForest>0.3</BorealForest>
-			</wildBiomes>
+      <wildBiomes>
+        <TemperateForest>0.3</TemperateForest>
+        <BorealForest>0.3</BorealForest>
+      </wildBiomes>
       <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
       <lifeExpectancy>15</lifeExpectancy>
@@ -298,7 +289,7 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-			<comps>
+    <comps>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>EggEagleOwlUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>EggEagleOwlFertilized</eggFertilizedDef>
@@ -306,58 +297,52 @@
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggCountRange>3</eggCountRange>
       </li>
-			<li Class="Birds.CompProperties_FlyingPawn">
-				<flyWhenFleeing>true</flyWhenFleeing>
-				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
-				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
-				<flyWhenWanderingChance>0.5</flyWhenWanderingChance>
-				<flyWhenHunting>true</flyWhenHunting>
-				<flyingBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
+      <li Class="Birds.CompProperties_FlyingPawn">
+        <flyWhenFleeing>true</flyWhenFleeing>
+        <flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
+        <soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
+        <flyWhenWanderingChance>0.5</flyWhenWanderingChance>
+        <flyWhenHunting>true</flyWhenHunting>
+        <flyingBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
+            <drawSize>0.6</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
+            <drawSize>0.8</drawSize>
+          </li>
+          <li>
 
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
+            <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
+            <drawSize>1.0</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
 
-					</li>
-				</flyingBodyGraphicData>
-				<flyingFemaleBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</li>
-				</flyingFemaleBodyGraphicData>
-			</li>
-		</comps>
+          </li>
+        </flyingBodyGraphicData>
+        <flyingFemaleBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
+            <drawSize>0.6</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
+            <drawSize>0.8</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
+            <drawSize>1.0</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+          </li>
+        </flyingFemaleBodyGraphicData>
+      </li>
+    </comps>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
@@ -424,7 +409,7 @@
     </lifeStages>
   </PawnKindDef>
 
-<!-- Kestrel -->
+  <!-- Kestrel -->
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_Kestrel</defName>
@@ -440,19 +425,19 @@
     <race>
       <body>Bird</body>
       <predator>true</predator>
-	  <maxPreyBodySize>0.3</maxPreyBodySize>
-	  <baseHungerRate>0.20</baseHungerRate>
+      <maxPreyBodySize>0.3</maxPreyBodySize>
+      <baseHungerRate>0.20</baseHungerRate>
       <baseBodySize>0.4</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
-	  <leatherDef>Leather_Bird</leatherDef>
+      <leatherDef>Leather_Bird</leatherDef>
       <trainability>Intermediate</trainability>
       <wildness>0.3</wildness>
-	        <wildBiomes>
-				<TemperateForest>0.4</TemperateForest>
-				<BorealForest>0.3</BorealForest>
-				<AridShrubland>0.3</AridShrubland>
-			</wildBiomes>
+      <wildBiomes>
+        <TemperateForest>0.4</TemperateForest>
+        <BorealForest>0.3</BorealForest>
+        <AridShrubland>0.3</AridShrubland>
+      </wildBiomes>
       <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
       <lifeExpectancy>15</lifeExpectancy>
@@ -516,7 +501,7 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-			<comps>
+    <comps>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>EggKestrelUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>EggKestrelFertilized</eggFertilizedDef>
@@ -524,58 +509,52 @@
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggCountRange>3</eggCountRange>
       </li>
-			<li Class="Birds.CompProperties_FlyingPawn">
-				<flyWhenFleeing>true</flyWhenFleeing>
-				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
-				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
-				<flyWhenHunting>true</flyWhenHunting>
-				<flyWhenWanderingChance>0.7</flyWhenWanderingChance>
-				<flyingBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.4</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
+      <li Class="Birds.CompProperties_FlyingPawn">
+        <flyWhenFleeing>true</flyWhenFleeing>
+        <soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
+        <flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
+        <flyWhenHunting>true</flyWhenHunting>
+        <flyWhenWanderingChance>0.7</flyWhenWanderingChance>
+        <flyingBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <drawSize>0.4</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <drawSize>0.6</drawSize>
+          </li>
+          <li>
 
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
+            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <drawSize>0.8</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
 
-					</li>
-				</flyingBodyGraphicData>
-				<flyingFemaleBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.4</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</li>
-				</flyingFemaleBodyGraphicData>
-			</li>
-		</comps>
+          </li>
+        </flyingBodyGraphicData>
+        <flyingFemaleBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <drawSize>0.4</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <drawSize>0.6</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <drawSize>0.8</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+          </li>
+        </flyingFemaleBodyGraphicData>
+      </li>
+    </comps>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
@@ -642,7 +621,7 @@
     </lifeStages>
   </PawnKindDef>
 
-<!-- Crow -->
+  <!-- Crow -->
 
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_Crow</defName>
@@ -658,17 +637,17 @@
     <race>
       <body>Bird</body>
       <predator>false</predator>
-	  <baseHungerRate>0.15</baseHungerRate>
+      <baseHungerRate>0.15</baseHungerRate>
       <baseBodySize>0.4</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
-	  <leatherDef>Leather_Bird</leatherDef>
+      <leatherDef>Leather_Bird</leatherDef>
       <trainability>Intermediate</trainability>
       <wildness>0.2</wildness>
-      		<wildBiomes>
-				<TemperateForest>0.6</TemperateForest>
-				<BorealForest>0.4</BorealForest>
-			</wildBiomes>
+      <wildBiomes>
+        <TemperateForest>0.6</TemperateForest>
+        <BorealForest>0.4</BorealForest>
+      </wildBiomes>
       <mateMtbHours>8</mateMtbHours>
       <lifeExpectancy>15</lifeExpectancy>
       <lifeStageAges>
@@ -731,7 +710,7 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
-			<comps>
+    <comps>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>EggCrowUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>EggCrowFertilized</eggFertilizedDef>
@@ -739,58 +718,52 @@
         <eggLayIntervalDays>15</eggLayIntervalDays>
         <eggCountRange>3</eggCountRange>
       </li>
-			<li Class="Birds.CompProperties_FlyingPawn">
-				<flyWhenFleeing>true</flyWhenFleeing>
-				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
-				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
-				<flyWhenHunting>true</flyWhenHunting>
-				<flyWhenWanderingChance>0.7</flyWhenWanderingChance>
-				<flyingBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.5</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.7</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
+      <li Class="Birds.CompProperties_FlyingPawn">
+        <flyWhenFleeing>true</flyWhenFleeing>
+        <soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
+        <flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
+        <flyWhenHunting>true</flyWhenHunting>
+        <flyWhenWanderingChance>0.7</flyWhenWanderingChance>
+        <flyingBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+            <drawSize>0.5</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+            <drawSize>0.7</drawSize>
+          </li>
+          <li>
 
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.1</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
+            <texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+            <drawSize>0.1</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
 
-					</li>
-				</flyingBodyGraphicData>
-				<flyingFemaleBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.5</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.7</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>1</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</li>
-				</flyingFemaleBodyGraphicData>
-			</li>
-		</comps>
+          </li>
+        </flyingBodyGraphicData>
+        <flyingFemaleBodyGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+            <drawSize>0.5</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+            <drawSize>0.7</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+            <drawSize>1</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+          </li>
+        </flyingFemaleBodyGraphicData>
+      </li>
+    </comps>
   </ThingDef>
 
   <PawnKindDef ParentName="AnimalKindBase">
