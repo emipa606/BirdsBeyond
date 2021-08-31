@@ -23,8 +23,8 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<wildness>0.7</wildness>
 			  <wildBiomes>
-				<TemperateForest>1</TemperateForest>
-				<BorealForest>0.5</BorealForest>
+				<TemperateForest>0.3</TemperateForest>
+				<BorealForest>0.2</BorealForest>
 			</wildBiomes>
 			<trainability>None</trainability>
 			<litterSizeCurve>
@@ -232,8 +232,8 @@
       <trainability>None</trainability>
       <wildness>0.7</wildness>
 	        <wildBiomes>
-				<TemperateForest>1</TemperateForest>
-				<BorealForest>1</BorealForest>
+				<TemperateForest>0.3</TemperateForest>
+				<BorealForest>0.3</BorealForest>
 			</wildBiomes>
       <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
@@ -367,7 +367,7 @@
     <labelFemale>eagle owl</labelFemale>
     <race>BB_EagleOwl</race>
     <combatPower>60</combatPower>
-    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <ecoSystemWeight>1</ecoSystemWeight>
     <lifeStages>
       <li>
         <label>chick</label>
@@ -449,9 +449,9 @@
       <trainability>Intermediate</trainability>
       <wildness>0.3</wildness>
 	        <wildBiomes>
-				<TemperateForest>1</TemperateForest>
-				<BorealForest>0.5</BorealForest>
-				<AridShrubland>0.5</AridShrubland>
+				<TemperateForest>0.4</TemperateForest>
+				<BorealForest>0.3</BorealForest>
+				<AridShrubland>0.3</AridShrubland>
 			</wildBiomes>
       <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
@@ -666,10 +666,9 @@
       <trainability>Intermediate</trainability>
       <wildness>0.2</wildness>
       		<wildBiomes>
-				<TemperateForest>1</TemperateForest>
-				<BorealForest>0.5</BorealForest>
+				<TemperateForest>0.6</TemperateForest>
+				<BorealForest>0.4</BorealForest>
 			</wildBiomes>
-	  <roamMtbDays>7</roamMtbDays>
       <mateMtbHours>8</mateMtbHours>
       <lifeExpectancy>15</lifeExpectancy>
       <lifeStageAges>
