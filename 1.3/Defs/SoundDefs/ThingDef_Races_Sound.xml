@@ -16,7 +16,7 @@
         </grains>
         <volumeRange>25~35</volumeRange>
         <pitchRange>1</pitchRange>
-        <distRange>0~70</distRange>
+        <distRange>0~30</distRange>
         <repeatMode>NeverTwice</repeatMode>
         <sustainLoop>False</sustainLoop>
       </li>

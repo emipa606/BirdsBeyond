@@ -749,18 +749,18 @@
 				<flyingBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.4</drawSize>
+						<drawSize>0.5</drawSize>
 						<color>(189,171,159)</color>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.6</drawSize>
+						<drawSize>0.7</drawSize>
 						<color>(189,171,159)</color>
 					</li>
 					<li>
 
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.8</drawSize>
+						<drawSize>0.1</drawSize>
 						<color>(189,171,159)</color>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
@@ -772,17 +772,17 @@
 				<flyingFemaleBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.4</drawSize>
+						<drawSize>0.5</drawSize>
 						<color>(189,171,159)</color>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.6</drawSize>
+						<drawSize>0.7</drawSize>
 						<color>(189,171,159)</color>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.8</drawSize>
+						<drawSize>1</drawSize>
 						<color>(189,171,159)</color>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
@@ -836,7 +836,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
@@ -844,15 +844,15 @@
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
     </lifeStages>
