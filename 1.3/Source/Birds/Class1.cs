@@ -16,6 +16,10 @@ namespace Birds
     {
         public bool flyWhenFleeing;
 
+        public float flyWhenWanderingChance;
+
+        public bool flyWhenHunting;
+
         public float flyingMoveSpeedMultiplier;
 
         public List<GraphicData> flyingBodyGraphicData;
@@ -50,6 +54,48 @@ namespace Birds
     public class CompFlyingPawn : ThingComp
     {
         public CompProperties_FlyingPawn Props => base.props as CompProperties_FlyingPawn;
+
+        public bool isFlyingCurrently;
+        public Pawn pawn => this.parent as Pawn;
+        public void ChangeGraphicToFlying()
+        {
+            var curKindLifeStage = pawn.ageTracker.CurKindLifeStage;
+            var curKindLifeStageInd = pawn.ageTracker.CurLifeStageIndex;
+            if (pawn.gender != Gender.Female || curKindLifeStage.femaleGraphicData == null)
+            {
+                pawn.SetGraphic(this.Props.flyingBodyGraphicData[curKindLifeStageInd]);
+            }
+            else
+            {
+                pawn.SetGraphic(this.Props.flyingFemaleBodyGraphicData[curKindLifeStageInd]);
+            }
+        }
+        public void ChangeGraphicToFlyingAndSound() // a joke
+        {
+            ChangeGraphicToFlying();
+            if (this.Props.soundOnFly != null)
+            {
+                SoundInfo info = SoundInfo.InMap(new TargetInfo(pawn.PositionHeld, pawn.MapHeld));
+                this.Props.soundOnFly.PlayOneShot(info);
+            }
+        }
+        public void ChangeGraphicToVanilla()
+        {
+            PawnKindLifeStage curKindLifeStage = pawn.ageTracker.CurKindLifeStage;
+            if (pawn.gender != Gender.Female || curKindLifeStage.femaleGraphicData == null)
+            {
+                pawn.SetGraphic(curKindLifeStage.bodyGraphicData);
+            }
+            else
+            {
+                pawn.SetGraphic(curKindLifeStage.femaleGraphicData);
+            }
+        }
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look(ref isFlyingCurrently, "isFlyingCurrently");
+        }
     }
 
     [StaticConstructorOnStartup]
@@ -79,6 +125,18 @@ namespace Birds
         }
     }
 
+    [HarmonyPatch(typeof(PawnGraphicSet), "ResolveAllGraphics")]
+    public static class ResolveAllGraphicsPrefix_Patch
+    {
+        public static void Postfix(PawnGraphicSet __instance)
+        {
+            if (__instance.pawn.IsFlyingPawn(out var comp) && comp.isFlyingCurrently)
+            {
+                comp.ChangeGraphicToFlying();
+            }
+        }
+    }
+
     [HarmonyPatch(typeof(Pawn_JobTracker), "StartJob")]
     public class Pawn_JobTracker_StartJob_Patch
     {
@@ -86,25 +144,19 @@ namespace Birds
         {
             if (___pawn.IsFlyingPawn(out var comp))
             {
-                var curJob = ___pawn.CurJobDef;
-                if (comp.Props.flyWhenFleeing && (curJob == JobDefOf.Flee || curJob == JobDefOf.FleeAndCower))
+                var curJob = ___pawn.CurJob;
+                if (curJob != null)
                 {
-                    var curKindLifeStage = ___pawn.ageTracker.CurKindLifeStage;
-                    var curKindLifeStageInd = ___pawn.ageTracker.CurLifeStageIndex;
-                    if (___pawn.gender != Gender.Female || curKindLifeStage.femaleGraphicData == null)
+                    if (comp.Props.flyWhenFleeing && (curJob.def == JobDefOf.Flee || curJob.def == JobDefOf.FleeAndCower)
+                        || curJob.def == JobDefOf.GotoWander && Rand.Chance(comp.Props.flyWhenWanderingChance)
+                        || curJob.def == JobDefOf.PredatorHunt && comp.Props.flyWhenHunting)
                     {
-                        ___pawn.SetGraphic(comp.Props.flyingBodyGraphicData[curKindLifeStageInd]);
-                    }
-                    else
-                    {
-                        ___pawn.SetGraphic(comp.Props.flyingFemaleBodyGraphicData[curKindLifeStageInd]);
-                    }
-                    if (comp.Props.soundOnFly != null)
-                    {
-                        SoundInfo info = SoundInfo.InMap(new TargetInfo(___pawn.PositionHeld, ___pawn.MapHeld));
-                        comp.Props.soundOnFly.PlayOneShot(info);
+                        comp.isFlyingCurrently = true;
+                        curJob.locomotionUrgency = LocomotionUrgency.Jog;
+                        comp.ChangeGraphicToFlyingAndSound();
                     }
                 }
+
             }
         }
     }
@@ -116,18 +168,10 @@ namespace Birds
         {
             if (___pawn.IsFlyingPawn(out var comp))
             {
-                var curJob = ___pawn.CurJobDef;
-                if (comp.Props.flyWhenFleeing && (curJob == JobDefOf.Flee || curJob == JobDefOf.FleeAndCower))
+                if (comp.isFlyingCurrently)
                 {
-                    PawnKindLifeStage curKindLifeStage = ___pawn.ageTracker.CurKindLifeStage;
-                    if (___pawn.gender != Gender.Female || curKindLifeStage.femaleGraphicData == null)
-                    {
-                        ___pawn.SetGraphic(curKindLifeStage.bodyGraphicData);
-                    }
-                    else
-                    {
-                        ___pawn.SetGraphic(curKindLifeStage.femaleGraphicData);
-                    }
+                    comp.ChangeGraphicToVanilla();
+                    comp.isFlyingCurrently = false;
                 }
             }
         }
@@ -139,13 +183,9 @@ namespace Birds
         [HarmonyPriority(Priority.Last)]
         private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
         {
-            if (stat == StatDefOf.MoveSpeed && thing is Pawn pawn && pawn.IsFlyingPawn(out var comp))
+            if (stat == StatDefOf.MoveSpeed && thing is Pawn pawn && pawn.IsFlyingPawn(out var comp) && comp.isFlyingCurrently)
             {
-                var curJob = pawn.CurJobDef;
-                if (comp.Props.flyWhenFleeing && (curJob == JobDefOf.Flee || curJob == JobDefOf.FleeAndCower))
-                {
-                    __result *= comp.Props.flyingMoveSpeedMultiplier;
-                }
+                __result *= comp.Props.flyingMoveSpeedMultiplier;
             }
         }
     }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xTILOFp+hOC3Gn7CIsA+xENnfqPXL5ea2ZHXTTljS6F61u1Wzas4fqtflcEI8ER6Qk9WXBbVZB12S3FFXeMDDw==",
+  "dgSpecHash": "ZwpA1ULKQCOJVLH/z+XlECO9WfRPgIeZ16/atfcQZl6iz3vxoEAdNjHD/cBK/B7RbNVM4Um9ZGztNZjjIu8gLA==",
   "success": true,
-  "projectFilePath": "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Birds-Beyond-Temperate-Forest\\1.3\\Source\\Birds\\Birds.csproj",
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Birds-Beyond-Temperate-Forest\\1.3\\Source\\Birds\\Birds.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3096-beta\\krafs.rimworld.ref.1.3.3096-beta.nupkg.sha512",
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3107-beta\\krafs.rimworld.ref.1.3.3107-beta.nupkg.sha512",
     "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.1.1\\lib.harmony.2.1.1.nupkg.sha512"
   ],
   "logs": []
