@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<SoundDef>
-		<defName>Pawn_Bird_BarnOwl_Fly</defName>
-		<context>MapOnly</context>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>Pawn/Animal/BarnOwl/WingFlap</clipPath>
-					</li>
-				</grains>
-				<volumeRange>25~35</volumeRange>
-				<pitchRange>0.9311765~1.091765</pitchRange>
-				<distRange>0~70</distRange>
-				<repeatMode>NeverTwice</repeatMode>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
+  <SoundDef>
+    <defName>Pawn_Bird_BarnOwl_Fly</defName>
+    <context>MapOnly</context>    
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn/Animal/BarnOwl/WingFlap</clipPath>
+          </li>
+        </grains>
+        <volumeRange>25~35</volumeRange>
+        <pitchRange>0.9311765~1.091765</pitchRange>
+        <distRange>0~70</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!-- Barn Owl -->
 
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>Bird_BarnOwl</defName>
+		<defName>BB_BarnOwl</defName>
 		<label>barn owl</label>
 		<devNote>owl</devNote>
 		<description>.</description>
 		<statBases>
-			<MoveSpeed>4.4</MoveSpeed>
+			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
 		<race>
 			<body>Bird</body>
 			<predator>true</predator>
-			<baseBodySize>0.32</baseBodySize>
-			<maxPreyBodySize>0.25</maxPreyBodySize>
+			<baseBodySize>0.4</baseBodySize>
+			<maxPreyBodySize>0.3</maxPreyBodySize>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>0.42</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<wildness>1</wildness>
 			<trainability>None</trainability>
-			<nuzzleMtbHours>12</nuzzleMtbHours>
-			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -50,7 +50,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>15</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -63,10 +63,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>Pawn_Cat_Injured</soundWounded>
-					<soundDeath>Pawn_Cat_Death</soundDeath>
-					<soundCall>Pawn_Cat_Call</soundCall>
-					<soundAngry>Pawn_Cat_Angry</soundAngry>
+					<soundWounded>Pawn_Chicken_Wounded</soundWounded>
+					<soundDeath>Pawn_Chicken_Death</soundDeath>
+					<soundCall>Pawn_Chicken_Call</soundCall>
+					<soundAngry>Pawn_Chicken_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -76,38 +76,45 @@
 		<tradeTags>
 			<li>AnimalCommon</li>
 		</tradeTags>
-		<tools>
-			<li>
-				<label>talons</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>beak</label>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>3</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>1</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
+    <tools>
+      <li>
+        <label>talons</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
 		<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggBarnOwlUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggBarnOwlFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>3</eggCountRange>
+      </li>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
 				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
@@ -161,9 +168,9 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>Bird_BarnOwl</defName>
+		<defName>BB_BarnOwl</defName>
 		<label>barn owl</label>
-		<race>Bird_BarnOwl</race>
+		<race>BB_BarnOwl</race>
 		<combatPower>35</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<lifeStages>
@@ -209,106 +216,103 @@
 	</PawnKindDef>
 
 
-	<!-- Eagle Owl -->
+<!-- Eagle Owl -->
 
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>BB_EagleOwl</defName>
-		<label>eagle owl</label>
-		<devNote>EagleOwl</devNote>
-		<description>A common and big owl. It is known for it's distinct call and feather ears.</description>
-		<statBases>
-			<MoveSpeed>2.1</MoveSpeed>
-			<MarketValue>200</MarketValue>
-			<LeatherAmount>36</LeatherAmount>
-			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
-			<FilthRate>3</FilthRate>
-		</statBases>
-		<race>
-			<body>Bird</body>
-			<predator>true</predator>
-			<maxPreyBodySize>0.3</maxPreyBodySize>
-			<baseHungerRate>0.20</baseHungerRate>
-			<baseBodySize>0.6</baseBodySize>
-			<baseHealthScale>0.5</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<leatherDef>Leather_Bird</leatherDef>
-			<trainability>None</trainability>
-			<wildness>0</wildness>
-			<roamMtbDays>7</roamMtbDays>
-			<mateMtbHours>8</mateMtbHours>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBabyTiny</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Chick_Call</soundWounded>
-					<soundDeath>Pawn_Chick_Call</soundDeath>
-					<soundCall>Pawn_Chick_Call</soundCall>
-					<soundAngry>Pawn_Chick_Call</soundAngry>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.12</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.2</minAge>
-					<soundWounded>Pawn_Chicken_Wounded</soundWounded>
-					<soundDeath>Pawn_Chicken_Death</soundDeath>
-					<soundCall>Pawn_Chicken_Call</soundCall>
-					<soundAngry>Pawn_Chicken_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalCommon</li>
-		</tradeTags>
-		<tools>
-			<li>
-				<label>talons</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>beak</label>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>3</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>1</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>EggChickenUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>EggChickenFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>15</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BB_EagleOwl</defName>
+    <label>eagle owl</label>
+    <description>A common and big owl. It is known for it's distinct call and feather ears.</description>
+    <statBases>
+      <MoveSpeed>2.1</MoveSpeed>
+      <MarketValue>200</MarketValue>
+      <LeatherAmount>36</LeatherAmount>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <FilthRate>3</FilthRate>
+    </statBases>
+    <race>
+      <body>Bird</body>
+      <predator>true</predator>
+	  <maxPreyBodySize>0.3</maxPreyBodySize>
+	  <baseHungerRate>0.20</baseHungerRate>
+      <baseBodySize>0.6</baseBodySize>
+      <baseHealthScale>0.5</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Bird</leatherDef>
+      <trainability>None</trainability>
+      <wildness>0.5</wildness>
+      <roamMtbDays>7</roamMtbDays>
+      <mateMtbHours>8</mateMtbHours>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBabyTiny</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Chick_Call</soundWounded>
+          <soundDeath>Pawn_Chick_Call</soundDeath>
+          <soundCall>Pawn_Chick_Call</soundCall>
+          <soundAngry>Pawn_Chick_Call</soundAngry>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.12</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Chicken_Wounded</soundWounded>
+          <soundDeath>Pawn_Chicken_Death</soundDeath>
+          <soundCall>Pawn_Chicken_Call</soundCall>
+          <soundAngry>Pawn_Chicken_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>talons</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+			<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggEagleOwlUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggEagleOwlFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>3</eggCountRange>
+      </li>
 			<li Class="Birds.CompProperties_FlyingPawn">
 				<flyWhenFleeing>true</flyWhenFleeing>
-				<flyWhenWanderingChance>0.9</flyWhenWanderingChance>
-				<flyWhenHunting>true</flyWhenHunting>
 				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
 				<flyingBodyGraphicData>
 					<li>
@@ -356,71 +360,280 @@
 				</flyingFemaleBodyGraphicData>
 			</li>
 		</comps>
-	</ThingDef>
+  </ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BB_EagleOwl</defName>
-		<label>eagle owl</label>
-		<labelMale>eagle owl</labelMale>
-		<labelFemale>eagle owl</labelFemale>
-		<race>BB_EagleOwl</race>
-		<combatPower>60</combatPower>
-		<ecoSystemWeight>0.30</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<label>chick</label>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-					<drawSize>0.6</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>0.6</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<labelMale>eagle owl</labelMale>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-					<drawSize>0.8</drawSize>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-					<drawSize>0.8</drawSize>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>0.8</drawSize>
-				</dessicatedBodyGraphicData>
-				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>0.8</drawSize>
-				</femaleDessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-					<drawSize>1.2</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.05)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-					<drawSize>1.2</drawSize>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>1.2</drawSize>
-				</dessicatedBodyGraphicData>
-				<femaleDessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>1.2</drawSize>
-				</femaleDessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BB_EagleOwl</defName>
+    <label>eagle owl</label>
+    <labelMale>eagle owl</labelMale>
+    <labelFemale>eagle owl</labelFemale>
+    <race>BB_EagleOwl</race>
+    <combatPower>60</combatPower>
+    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>chick</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <labelMale>eagle owl</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
+          <drawSize>0.8</drawSize>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
+          <drawSize>0.8</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.8</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.8</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.05)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
+          <drawSize>1.2</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>1.2</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
 
+<!-- Kestrel -->
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>BB_Kestrel</defName>
+    <label>Kestrel</label>
+    <description>A falcon easily distinguished by their typical hunting behavior which is hovering above it's prey eventually swooping down on it.</description>
+    <statBases>
+      <MoveSpeed>3</MoveSpeed>
+      <MarketValue>200</MarketValue>
+      <LeatherAmount>21</LeatherAmount>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <FilthRate>2.8</FilthRate>
+    </statBases>
+    <race>
+      <body>Bird</body>
+      <predator>true</predator>
+	  <maxPreyBodySize>0.3</maxPreyBodySize>
+	  <baseHungerRate>0.20</baseHungerRate>
+      <baseBodySize>0.4</baseBodySize>
+      <baseHealthScale>0.5</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Bird</leatherDef>
+      <trainability>Intermediate</trainability>
+      <wildness>0.3</wildness>
+      <roamMtbDays>7</roamMtbDays>
+      <mateMtbHours>8</mateMtbHours>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBabyTiny</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Chick_Call</soundWounded>
+          <soundDeath>Pawn_Chick_Call</soundDeath>
+          <soundCall>Pawn_Chick_Call</soundCall>
+          <soundAngry>Pawn_Chick_Call</soundAngry>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.12</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Chicken_Wounded</soundWounded>
+          <soundDeath>Pawn_Chicken_Death</soundDeath>
+          <soundCall>Pawn_Chicken_Call</soundCall>
+          <soundAngry>Pawn_Chicken_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>talons</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>beak</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>1</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+			<comps>
+      <li Class="CompProperties_EggLayer">
+        <eggUnfertilizedDef>EggKestrelUnfertilized</eggUnfertilizedDef>
+        <eggFertilizedDef>EggKestrelFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>15</eggLayIntervalDays>
+        <eggCountRange>3</eggCountRange>
+      </li>
+			<li Class="Birds.CompProperties_FlyingPawn">
+				<flyWhenFleeing>true</flyWhenFleeing>
+				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
+				<flyingBodyGraphicData>
+					<li>
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>0.4</drawSize>
+						<color>(189,171,159)</color>
+					</li>
+					<li>
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>0.6</drawSize>
+						<color>(189,171,159)</color>
+					</li>
+					<li>
+
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>0.8</drawSize>
+						<color>(189,171,159)</color>
+						<shadowData>
+							<volume>(0.25, 0.3, 0.25)</volume>
+							<offset>(0,0,-0.15)</offset>
+						</shadowData>
+
+					</li>
+				</flyingBodyGraphicData>
+				<flyingFemaleBodyGraphicData>
+					<li>
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>0.4</drawSize>
+						<color>(189,171,159)</color>
+					</li>
+					<li>
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>0.6</drawSize>
+						<color>(189,171,159)</color>
+					</li>
+					<li>
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>0.8</drawSize>
+						<color>(189,171,159)</color>
+						<shadowData>
+							<volume>(0.25, 0.3, 0.25)</volume>
+							<offset>(0,0,-0.15)</offset>
+						</shadowData>
+					</li>
+				</flyingFemaleBodyGraphicData>
+			</li>
+		</comps>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BB_Kestrel</defName>
+    <label>kestrel</label>
+    <labelMale>kestrel</labelMale>
+    <labelFemale>kestrel</labelFemale>
+    <race>BB_Kestrel</race>
+    <combatPower>50</combatPower>
+    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>chick</label>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
+          <drawSize>0.4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <labelMale>kestrel</labelMale>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
+          <drawSize>0.6</drawSize>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
+          <drawSize>0.6</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.6</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
+          <drawSize>0.8</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.05)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
+          <drawSize>0.8</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+          <drawSize>0.8</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
 
 </Defs>
