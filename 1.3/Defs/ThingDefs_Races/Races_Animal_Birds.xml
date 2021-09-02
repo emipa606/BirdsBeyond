@@ -7,7 +7,7 @@
     <defName>BB_BarnOwl</defName>
     <label>barn owl</label>
     <devNote>owl</devNote>
-    <description>.</description>
+    <description>A medium-sized owl with a distinctive, heart-shaped face. They are renowned for their eerie, drawn-out shrieking calls. Barn owls prey upon small mammals which they locate with their excellent hearing.</description>
     <statBases>
       <MoveSpeed>4</MoveSpeed>
       <MarketValue>100</MarketValue>
@@ -186,7 +186,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_EagleOwl</defName>
     <label>eagle owl</label>
-    <description>A common and big owl. It is known for it's distinct call and feather ears.</description>
+    <description>One of the largest species of owl, the eagle-owl has characteristic ear tufts, orange eyes and an 'Uhu' call that makes it instantly recognisable. Due to its large size, it can take a wide variety of prey but typically favours small mammals and birds.</description>
     <statBases>
       <MoveSpeed>2.1</MoveSpeed>
       <MarketValue>200</MarketValue>
@@ -361,7 +361,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_Kestrel</defName>
     <label>Kestrel</label>
-    <description>A falcon easily distinguished by their typical hunting behavior which is hovering above its prey eventually swooping down on it.</description>
+    <description>A falcon noted for the prominent sexual dimorphism of their plumage, with the males having a blue-grey cap. The kestrel feeds almost exclusively upon small mammals, aided by its ability to see near ultraviolet light, and performs a characteristic hovering flight whilst hunting.</description>
     <statBases>
       <MoveSpeed>3</MoveSpeed>
       <MarketValue>200</MarketValue>
@@ -465,7 +465,7 @@
         <flyWhenWanderingChance>0.7</flyWhenWanderingChance>
         <flyingBodyGraphicData>
           <li>
-            <texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+            <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale_flight</texPath>
             <drawSize>1</drawSize>
           </li>
           <li>
@@ -483,6 +483,26 @@
 
           </li>
         </flyingBodyGraphicData>
+        <flyingFemaleGraphicData>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale_flight</texPath>
+            <drawSize>1</drawSize>
+          </li>
+          <li>
+            <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale_flight</texPath>
+            <drawSize>1.2</drawSize>
+          </li>
+          <li>
+
+            <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale_flight</texPath>
+            <drawSize>1.5</drawSize>
+            <shadowData>
+              <volume>(0.25, 0.3, 0.25)</volume>
+              <offset>(0,0,-0.15)</offset>
+            </shadowData>
+
+          </li>
+        </flyingFemaleGraphicData>
       </li>
     </comps>
   </ThingDef>
@@ -497,7 +517,7 @@
       <li>
         <label>chick</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
+          <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale</texPath>
           <drawSize>1</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -510,6 +530,10 @@
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
           <drawSize>1.2</drawSize>
         </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale</texPath>
+          <drawSize>1.2</drawSize>
+        </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
           <drawSize>1.2</drawSize>
@@ -524,6 +548,10 @@
             <offset>(0,0,-0.05)</offset>
           </shadowData>
         </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale</texPath>
+          <drawSize>1.5</drawSize>
+        </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
           <drawSize>1.5</drawSize>
@@ -537,7 +565,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BB_Crow</defName>
     <label>crow</label>
-    <description>A very intelligent bird bearing the superstition of being the companion of dark magic and death.</description>
+    <description>A passerine in the corvid family, the crow is a highly intelligent bird that sustains itself primarily through scavenging, although it will forage on occasion. Due to their dietary habits, they have been considered ill-omens, and associated with war and the occult.</description>
     <statBases>
       <MoveSpeed>3</MoveSpeed>
       <MarketValue>100</MarketValue>
@@ -551,10 +579,10 @@
       <baseHungerRate>0.15</baseHungerRate>
       <baseBodySize>0.4</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <foodType>OmnivoreAnimal</foodType>
       <leatherDef>Leather_Bird</leatherDef>
       <trainability>Advanced</trainability>
-      <wildness>0.2</wildness>
+      <wildness>0.4</wildness>
       <wildBiomes>
         <TemperateForest>0.6</TemperateForest>
         <BorealForest>0.4</BorealForest>
