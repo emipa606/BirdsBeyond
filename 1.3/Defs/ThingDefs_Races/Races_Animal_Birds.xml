@@ -483,7 +483,7 @@
 
           </li>
         </flyingBodyGraphicData>
-        <flyingFemaleGraphicData>
+        <flyingFemaleBodyGraphicData>
           <li>
             <texPath>Things/Pawn/Animal/Kestrel/KestrelFemale_flight</texPath>
             <drawSize>1</drawSize>
@@ -502,7 +502,7 @@
             </shadowData>
 
           </li>
-        </flyingFemaleGraphicData>
+        </flyingFemaleBodyGraphicData>
       </li>
     </comps>
   </ThingDef>
