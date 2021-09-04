@@ -98,10 +98,18 @@
           <li>Blunt</li>
         </capacities>
         <power>1</power>
-        <cooldownTime>1.5</cooldownTime>
+        <cooldownTime>20</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
+        <chanceFactor>0.8</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
     </tools>
 		<comps>
@@ -121,18 +129,18 @@
 				<flyingBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
+						<drawSize>0.8</drawSize>
 						<color>(189,171,159)</color>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
+						<drawSize>1</drawSize>
 						<color>(189,171,159)</color>
 					</li>
 					<li>
 
 						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
+						<drawSize>1.2</drawSize>
 						<color>(189,171,159)</color>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
@@ -141,27 +149,6 @@
 
 					</li>
 				</flyingBodyGraphicData>
-				<flyingFemaleBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</li>
-				</flyingFemaleBodyGraphicData>
 			</li>
 		</comps>
 	</ThingDef>
@@ -177,19 +164,7 @@
 				<label>barn owl</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
-					<drawSize>0.6</drawSize>
-					<color>(189,171,159)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>0.6</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
 					<drawSize>0.8</drawSize>
-					<color>(189,171,159)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
@@ -199,8 +174,17 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
-					<drawSize>1.0</drawSize>
-					<color>(189,171,159)</color>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/BarnOwl/BarnOwl</texPath>
+					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -208,7 +192,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -308,10 +292,18 @@
           <li>Blunt</li>
         </capacities>
         <power>1</power>
-        <cooldownTime>1.5</cooldownTime>
+        <cooldownTime>20</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
+        <chanceFactor>0.8</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
     </tools>
 			<comps>
@@ -331,19 +323,16 @@
 				<flyingBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
+						<drawSize>1</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
+						<drawSize>1.2</drawSize>
 					</li>
 					<li>
 
 						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
+						<drawSize>1.4</drawSize>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
 							<offset>(0,0,-0.15)</offset>
@@ -351,27 +340,6 @@
 
 					</li>
 				</flyingBodyGraphicData>
-				<flyingFemaleBodyGraphicData>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/EagleOwl/EagleOwl_flight</texPath>
-						<drawSize>1.0</drawSize>
-						<color>(189,171,159)</color>
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</li>
-				</flyingFemaleBodyGraphicData>
 			</li>
 		</comps>
   </ThingDef>
@@ -389,53 +357,37 @@
         <label>chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>1</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <labelMale>eagle owl</labelMale>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-          <drawSize>0.8</drawSize>
-        </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-          <drawSize>0.8</drawSize>
-        </femaleDessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
           </shadowData>
         </bodyGraphicData>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/EagleOwl/EagleOwl</texPath>
-          <drawSize>1.2</drawSize>
-        </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated_Owl</texPath>
-          <drawSize>1.2</drawSize>
-        </femaleDessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
@@ -457,13 +409,13 @@
       <body>Bird</body>
       <predator>true</predator>
 	  <maxPreyBodySize>0.3</maxPreyBodySize>
-	  <baseHungerRate>0.20</baseHungerRate>
-      <baseBodySize>0.4</baseBodySize>
+	  <baseHungerRate>0.30</baseHungerRate>
+      <baseBodySize>0.3</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>Leather_Bird</leatherDef>
       <trainability>Intermediate</trainability>
-      <wildness>0.3</wildness>
+      <wildness>0.4</wildness>
 	        <wildBiomes>
 				<TemperateForest>0.4</TemperateForest>
 				<BorealForest>0.3</BorealForest>
@@ -534,10 +486,18 @@
           <li>Blunt</li>
         </capacities>
         <power>1</power>
-        <cooldownTime>1.5</cooldownTime>
+        <cooldownTime>20</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
+        <chanceFactor>0.8</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
     </tools>
 			<comps>
@@ -557,18 +517,16 @@
 				<flyingBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.4</drawSize>
-						<color>(189,171,159)</color>
+						<drawSize>0.6</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
+						<drawSize>0.8</drawSize>
 					</li>
 					<li>
 
 						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.8</drawSize>
+						<drawSize>1</drawSize>
 						<color>(189,171,159)</color>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
@@ -580,18 +538,15 @@
 				<flyingFemaleBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
-						<drawSize>0.4</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
 						<drawSize>0.6</drawSize>
-						<color>(189,171,159)</color>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
 						<drawSize>0.8</drawSize>
-						<color>(189,171,159)</color>
+					</li>
+					<li>
+						<texPath>Things/Pawn/Animal/Kestrel/Kestrel_flight</texPath>
+						<drawSize>1</drawSize>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
 							<offset>(0,0,-0.15)</offset>
@@ -615,7 +570,7 @@
         <label>chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.4</drawSize>
+          <drawSize>0.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
@@ -626,25 +581,25 @@
         <labelMale>kestrel</labelMale>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>0.8</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>0.8</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.6</drawSize>
+          <drawSize>0.8</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
@@ -652,15 +607,15 @@
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
         <femaleDessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.8</drawSize>
+          <drawSize>1</drawSize>
         </femaleDessicatedBodyGraphicData>
       </li>
     </lifeStages>
@@ -682,7 +637,7 @@
     <race>
       <body>Bird</body>
       <predator>false</predator>
-	  <baseHungerRate>0.15</baseHungerRate>
+	  <baseHungerRate>0.2</baseHungerRate>
       <baseBodySize>0.4</baseBodySize>
       <baseHealthScale>0.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
@@ -730,7 +685,7 @@
         <capacities>
           <li>Scratch</li>
         </capacities>
-        <power>2</power>
+        <power>5</power>
         <cooldownTime>1.5</cooldownTime>
         <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
       </li>
@@ -739,7 +694,7 @@
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>2</power>
+        <power>3</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
       </li>
@@ -749,10 +704,18 @@
           <li>Blunt</li>
         </capacities>
         <power>1</power>
-        <cooldownTime>1.5</cooldownTime>
+        <cooldownTime>20</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
+        <chanceFactor>0.8</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
       </li>
     </tools>
 			<comps>
@@ -768,20 +731,20 @@
 				<soundOnFly>Pawn_Bird_BarnOwl_Fly</soundOnFly>
 				<flyingMoveSpeedMultiplier>5</flyingMoveSpeedMultiplier>
 				<flyWhenHunting>true</flyWhenHunting>
-				<flyWhenWanderingChance>0.7</flyWhenWanderingChance>
+				<flyWhenWanderingChance>0.5</flyWhenWanderingChance>
 				<flyingBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.5</drawSize>
+						<drawSize>0.8</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.7</drawSize>
+						<drawSize>1</drawSize>
 					</li>
 					<li>
 
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>1</drawSize>
+						<drawSize>1.2</drawSize>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
 							<offset>(0,0,-0.15)</offset>
@@ -792,18 +755,16 @@
 				<flyingFemaleBodyGraphicData>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.5</drawSize>
-						<color>(189,171,159)</color>
-					</li>
-					<li>
-						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
-						<drawSize>0.7</drawSize>
-						<color>(189,171,159)</color>
+						<drawSize>0.8</drawSize>
 					</li>
 					<li>
 						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
 						<drawSize>1</drawSize>
 						<color>(189,171,159)</color>
+					</li>
+					<li>
+						<texPath>Things/Pawn/Animal/Crow/Crow_flight</texPath>
+						<drawSize>1.2</drawSize>
 						<shadowData>
 							<volume>(0.25, 0.3, 0.25)</volume>
 							<offset>(0,0,-0.15)</offset>
@@ -827,56 +788,39 @@
         <label>chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
-          <drawSize>0.5</drawSize>
+          <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.5</drawSize>
+          <drawSize>0.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
-        <labelMale>crow</labelMale>
+        <labe>crow</label>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.7</drawSize>
+          <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
+          <drawSize>1</drawSize>
         </bodyGraphicData>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Kestrel/Kestrel</texPath>
-          <drawSize>0.7</drawSize>
-        </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.7</drawSize>
+          <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>0.7</drawSize>
-        </femaleDessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
           </shadowData>
         </bodyGraphicData>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
-          <drawSize>1</drawSize>
-        </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
         </dessicatedBodyGraphicData>
-        <femaleDessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Dessicated_Kestrel</texPath>
-          <drawSize>1</drawSize>
-        </femaleDessicatedBodyGraphicData>
       </li>
     </lifeStages>
   </PawnKindDef>
-
 
 </Defs>
