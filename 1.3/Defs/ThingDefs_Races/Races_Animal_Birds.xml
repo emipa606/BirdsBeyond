@@ -796,7 +796,7 @@
         </dessicatedBodyGraphicData>
       </li>
       <li>
-        <labe>crow</label>
+        <label>crow</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Crow/Crow</texPath>
           <drawSize>1</drawSize>
