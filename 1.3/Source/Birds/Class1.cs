@@ -9,9 +9,15 @@ using System.Threading.Tasks;
 using Verse;
 using Verse.AI;
 using Verse.Sound;
+using static Verse.DamageWorker;
 
 namespace Birds
 {
+    public class AttackDamageFactor
+    {
+        public float targetBodySize;
+        public float damageMultiplier;
+    }
     public class CompProperties_FlyingPawn : CompProperties
     {
         public bool flyWhenFleeing;
@@ -22,9 +28,15 @@ namespace Birds
 
         public float flyingMoveSpeedMultiplier;
 
+        public AttackDamageFactor attackDamageFactor;
+
         public List<GraphicData> flyingBodyGraphicData;
 
         public List<GraphicData> flyingFemaleBodyGraphicData;
+
+        public float evadeChanceWhenFlying = 1f;
+
+        public bool attackEnemiesMasterAttacking;
 
         public SoundDef soundOnFly;
         public override void ResolveReferences(ThingDef parentDef)
@@ -186,6 +198,83 @@ namespace Birds
             if (stat == StatDefOf.MoveSpeed && thing is Pawn pawn && pawn.IsFlyingPawn(out var comp) && comp.isFlyingCurrently)
             {
                 __result *= comp.Props.flyingMoveSpeedMultiplier;
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(DamageWorker_AddInjury), "ApplyDamageToPart")]
+    public static class Patch_ApplyDamageToPart
+    {
+        public static void Prefix(ref DamageInfo dinfo, Pawn pawn, DamageResult result)
+        {
+            var instigator = dinfo.Instigator;
+            if (instigator != null)
+            {
+                var compFlying = instigator.TryGetComp<CompFlyingPawn>();
+                if (compFlying != null)
+                {
+                    var attackDamage = compFlying.Props.attackDamageFactor;
+                    if (attackDamage != null)
+                    {
+                        if (pawn.BodySize <= attackDamage.targetBodySize)
+                        {
+                            dinfo.SetAmount(dinfo.Amount * attackDamage.damageMultiplier);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Verb_MeleeAttack), "GetDodgeChance")]
+    public static class Patch_GetDodgeChance
+    {
+        public static void Postfix(ref float __result, LocalTargetInfo target)
+        {
+            var pawn = target.Pawn;
+            if (pawn != null)
+            {
+                var compFlying = pawn.TryGetComp<CompFlyingPawn>();
+                if (compFlying != null && compFlying.isFlyingCurrently)
+                {
+                    __result *= compFlying.Props.evadeChanceWhenFlying;
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(ShotReport), "AimOnTargetChance_StandardTarget", MethodType.Getter)]
+    public class AimOnTargetChance_StandardTarget_Patch
+    {
+        public static void Postfix(ref float __result, TargetInfo ___target)
+        {
+            if (___target.Thing is Pawn pawn)
+            {
+                var compFlying = pawn.TryGetComp<CompFlyingPawn>();
+                if (compFlying != null && compFlying.isFlyingCurrently)
+                {
+                    __result *= (1f - compFlying.Props.evadeChanceWhenFlying);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(JobGiver_AIDefendPawn), "FindAttackTarget")]
+    public static class Patch_FindAttackTarget
+    {
+        public static void Postfix(JobGiver_AIDefendPawn __instance, ref Thing __result, Pawn pawn)
+        {
+            if (pawn != null && __instance is JobGiver_AIDefendMaster)
+            {
+                var compFlying = pawn.TryGetComp<CompFlyingPawn>();
+                if (compFlying != null && compFlying.Props.attackEnemiesMasterAttacking)
+                {
+                    Pawn defendee = pawn.playerSettings.Master;
+                    if (defendee.CurJobDef == JobDefOf.AttackStatic || defendee.CurJobDef == JobDefOf.AttackMelee)
+                    {
+                        __result = defendee.CurJob.targetA.Thing;
+                    }
+                }
             }
         }
     }

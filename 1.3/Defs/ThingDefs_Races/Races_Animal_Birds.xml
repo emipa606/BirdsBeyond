@@ -129,16 +129,20 @@
             <drawSize>1.3</drawSize>
           </li>
           <li>
-
             <texPath>Things/Pawn/Animal/BarnOwl/BarnOwl_flight</texPath>
             <drawSize>1.4</drawSize>
             <shadowData>
               <volume>(0.25, 0.3, 0.25)</volume>
               <offset>(0,0,-0.15)</offset>
             </shadowData>
-
           </li>
         </flyingBodyGraphicData>
+		<attackDamageFactor>
+			<targetBodySize>0.9</targetBodySize>
+			<damageMultiplier>2</damageMultiplier>
+		</attackDamageFactor>
+		<evadeChanceWhenFlying>0.9</evadeChanceWhenFlying>
+		<attackEnemiesMasterAttacking>true</attackEnemiesMasterAttacking>
       </li>
     </comps>
   </ThingDef>
