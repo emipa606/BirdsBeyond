@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
-
-<!-- Flight -->
-
+  <!-- Flight -->
   <SoundDef>
     <defName>Pawn_Bird_BarnOwl_Fly</defName>
-    <context>MapOnly</context>    
+    <context>MapOnly</context>
     <subSounds>
       <li>
         <grains>
@@ -22,12 +19,10 @@
       </li>
     </subSounds>
   </SoundDef>
-  
   <!-- Barn Owl Call -->
-  
   <SoundDef>
     <defName>Pawn_Bird_BarnOwl_Call</defName>
-    <context>MapOnly</context>    
+    <context>MapOnly</context>
     <subSounds>
       <li>
         <grains>
@@ -43,12 +38,10 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-    <!-- Eagle Owl Call -->
-  
+  <!-- Eagle Owl Call -->
   <SoundDef>
     <defName>Pawn_Bird_EagleOwl_Call</defName>
-    <context>MapOnly</context>    
+    <context>MapOnly</context>
     <subSounds>
       <li>
         <grains>
@@ -64,12 +57,10 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-    <!-- Kestrel Call -->
-  
+  <!-- Kestrel Call -->
   <SoundDef>
     <defName>Pawn_Bird_Kestrel_Call</defName>
-    <context>MapOnly</context>    
+    <context>MapOnly</context>
     <subSounds>
       <li>
         <grains>
@@ -85,12 +76,10 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-    <!-- Crow Call -->
-  
+  <!-- Crow Call -->
   <SoundDef>
     <defName>Pawn_Bird_Crow_Call</defName>
-    <context>MapOnly</context>    
+    <context>MapOnly</context>
     <subSounds>
       <li>
         <grains>
@@ -106,4 +95,4 @@
       </li>
     </subSounds>
   </SoundDef>
-  </Defs>
+</Defs>

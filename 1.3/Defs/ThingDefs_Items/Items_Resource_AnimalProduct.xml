@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<!-- Barn Owl -->
-
+  <!-- Barn Owl -->
   <ThingDef ParentName="EggUnfertBase">
     <defName>EggBarnOwlUnfertilized</defName>
     <label>barn owl egg (unfert.)</label>
@@ -14,7 +12,6 @@
       <MarketValue>10</MarketValue>
     </statBases>
   </ThingDef>
-
   <ThingDef ParentName="EggFertBase">
     <defName>EggBarnOwlFertilized</defName>
     <label>barn owl egg (fert.)</label>
@@ -32,9 +29,7 @@
       </li>
     </comps>
   </ThingDef>
-
-<!-- Eagle Owl -->
-
+  <!-- Eagle Owl -->
   <ThingDef ParentName="EggUnfertBase">
     <defName>EggEagleOwlUnfertilized</defName>
     <label>eagle owl egg (unfert.)</label>
@@ -46,7 +41,6 @@
       <MarketValue>10</MarketValue>
     </statBases>
   </ThingDef>
-
   <ThingDef ParentName="EggFertBase">
     <defName>EggEagleOwlFertilized</defName>
     <label>eagle owl egg (fert.)</label>
@@ -64,9 +58,7 @@
       </li>
     </comps>
   </ThingDef>
-  
-<!-- Kestrel -->
-
+  <!-- Kestrel -->
   <ThingDef ParentName="EggUnfertBase">
     <defName>EggKestrelUnfertilized</defName>
     <label>kestrel egg (unfert.)</label>
@@ -78,7 +70,6 @@
       <MarketValue>10</MarketValue>
     </statBases>
   </ThingDef>
-
   <ThingDef ParentName="EggFertBase">
     <defName>EggKestrelFertilized</defName>
     <label>kestrel egg (fert.)</label>
@@ -96,9 +87,7 @@
       </li>
     </comps>
   </ThingDef>
-  
- <!-- Crow -->
-
+  <!-- Crow -->
   <ThingDef ParentName="EggUnfertBase">
     <defName>EggCrowUnfertilized</defName>
     <label>crow egg (unfert.)</label>
@@ -110,7 +99,6 @@
       <MarketValue>10</MarketValue>
     </statBases>
   </ThingDef>
-
   <ThingDef ParentName="EggFertBase">
     <defName>EggCrowFertilized</defName>
     <label>crow egg (fert.)</label>
