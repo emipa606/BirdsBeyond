@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Flight -->
   <SoundDef>
@@ -88,6 +88,44 @@
           </li>
         </grains>
         <volumeRange>25~35</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~70</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- Cockatoo Call -->
+  <SoundDef>
+    <defName>Pawn_Bird_Cockatoo_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn/Animal/Cockatoo/cockatoo_call</clipPath>
+          </li>
+        </grains>
+        <volumeRange>35~50</volumeRange>
+        <pitchRange>0.9~1.1</pitchRange>
+        <distRange>0~70</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- Parrot Call -->
+  <SoundDef>
+    <defName>Pawn_Bird_Parrot_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Pawn/Animal/Parrot/parrot_call</clipPath>
+          </li>
+        </grains>
+        <volumeRange>35~50</volumeRange>
         <pitchRange>0.9~1.1</pitchRange>
         <distRange>0~70</distRange>
         <repeatMode>NeverTwice</repeatMode>

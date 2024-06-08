@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Barn Owl -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggCockatooUnfertilized</defName>
+    <label>cockatoo egg (unfert.)</label>
+    <description>An unfertilized cockatoo egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggCockatooFertilized</defName>
+    <label>cockatoo egg (fert.)</label>
+    <description>A fertilized cockatoo egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>BB_Cockatoo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Hornbill -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggHornbillUnfertilized</defName>
+    <label>hornbill egg (unfert.)</label>
+    <description>An unfertilized hornbill egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggHornbillFertilized</defName>
+    <label>hornbill egg (fert.)</label>
+    <description>A fertilized hornbill egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>BB_Hornbill</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Parrot -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggParrotUnfertilized</defName>
+    <label>parrot egg (unfert.)</label>
+    <description>An unfertilized parrot egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggParrotFertilized</defName>
+    <label>parrot egg (fert.)</label>
+    <description>A fertilized parrot egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>BB_Parrot</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Toucan -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggToucanUnfertilized</defName>
+    <label>toucan egg (unfert.)</label>
+    <description>An unfertilized toucan egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggToucanFertilized</defName>
+    <label>toucan egg (fert.)</label>
+    <description>A fertilized toucan egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>BB_Toucan</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
