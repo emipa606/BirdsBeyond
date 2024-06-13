@@ -1,5 +1,8 @@
 # Changelog for BirdsBeyond
 
+1.5.2 - Fixed non-flying pawns attack-actions
+
+
 1.5.1 - Updated for 1.5
 Combined the Temperate Forest version with the Tropical Rainforest version
 Now uses the rendernode features, should work better

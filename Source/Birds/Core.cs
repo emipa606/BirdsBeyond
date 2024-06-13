@@ -8,7 +8,7 @@ namespace Birds;
 [StaticConstructorOnStartup]
 public static class Core
 {
-    private static readonly Dictionary<Pawn, CompFlyingPawn> cachedComps = new Dictionary<Pawn, CompFlyingPawn>();
+    private static Dictionary<Pawn, CompFlyingPawn> cachedComps = new Dictionary<Pawn, CompFlyingPawn>();
 
     static Core()
     {
@@ -17,11 +17,23 @@ public static class Core
 
     public static bool IsFlyingPawn(this Pawn pawn, out CompFlyingPawn comp)
     {
-        if (!cachedComps.TryGetValue(pawn, out comp))
+        comp = null;
+        if (pawn == null)
         {
-            cachedComps[pawn] = comp = pawn.TryGetComp<CompFlyingPawn>();
+            return false;
         }
 
+        if (cachedComps == null)
+        {
+            cachedComps = [];
+        }
+
+        if (!cachedComps.TryGetValue(pawn, out comp))
+        {
+            cachedComps[pawn] = pawn.TryGetComp<CompFlyingPawn>();
+        }
+
+        comp = cachedComps[pawn];
         return comp != null;
     }
 }
