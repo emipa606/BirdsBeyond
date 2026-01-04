@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Parrot -->
+  <BB_Parrot.label>Parrot</BB_Parrot.label>
+  <!-- EN: A treasured avian companion for pirates and collectors alike. The parrot is very well known for it's intelligence, strong beak and ability to mimic speech. -->
+  <BB_Parrot.description>A treasured avian companion for pirates and collectors alike. The parrot is very well known for it's intelligence, strong beak and ability to mimic speech.</BB_Parrot.description>
+  <!-- EN: talons -->
+  <BB_Parrot.tools.talons.label>talons</BB_Parrot.tools.talons.label>
+  <!-- EN: beak -->
+  <BB_Parrot.tools.beak.label>beak</BB_Parrot.tools.beak.label>
+  <!-- EN: head -->
+  <BB_Parrot.tools.head.label>head</BB_Parrot.tools.head.label>
+</LanguageData>

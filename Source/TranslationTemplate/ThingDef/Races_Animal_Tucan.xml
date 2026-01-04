@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: toucan -->
+  <BB_Toucan.label>toucan</BB_Toucan.label>
+  <!-- EN: A black bird with a colorful beak. -->
+  <BB_Toucan.description>A black bird with a colorful beak.</BB_Toucan.description>
+  <!-- EN: talons -->
+  <BB_Toucan.tools.talons.label>talons</BB_Toucan.tools.talons.label>
+  <!-- EN: beak -->
+  <BB_Toucan.tools.beak.label>beak</BB_Toucan.tools.beak.label>
+  <!-- EN: head -->
+  <BB_Toucan.tools.head.label>head</BB_Toucan.tools.head.label>
+</LanguageData>

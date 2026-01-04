@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cockatoo -->
+  <BB_Cockatoo.label>cockatoo</BB_Cockatoo.label>
+  <!-- EN: A very intelligent parrot with distinctive crestfeathers. Their strong beak is able to crack nuts. -->
+  <BB_Cockatoo.description>A very intelligent parrot with distinctive crestfeathers. Their strong beak is able to crack nuts.</BB_Cockatoo.description>
+  <!-- EN: talons -->
+  <BB_Cockatoo.tools.talons.label>talons</BB_Cockatoo.tools.talons.label>
+  <!-- EN: beak -->
+  <BB_Cockatoo.tools.beak.label>beak</BB_Cockatoo.tools.beak.label>
+  <!-- EN: head -->
+  <BB_Cockatoo.tools.head.label>head</BB_Cockatoo.tools.head.label>
+</LanguageData>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: barn owl egg (fert.) -->
+  <EggBarnOwlFertilized.label>barn owl egg (fert.)</EggBarnOwlFertilized.label>
+  <!-- EN: A fertilized barn owl egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggBarnOwlFertilized.description>A fertilized barn owl egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggBarnOwlFertilized.description>
+  <!-- EN: barn owl egg (unfert.) -->
+  <EggBarnOwlUnfertilized.label>barn owl egg (unfert.)</EggBarnOwlUnfertilized.label>
+  <!-- EN: An unfertilized barn owl egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggBarnOwlUnfertilized.description>An unfertilized barn owl egg. It can be eaten raw, but it's much, much better cooked.</EggBarnOwlUnfertilized.description>
+  <!-- EN: cockatoo egg (fert.) -->
+  <EggCockatooFertilized.label>cockatoo egg (fert.)</EggCockatooFertilized.label>
+  <!-- EN: A fertilized cockatoo egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggCockatooFertilized.description>A fertilized cockatoo egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggCockatooFertilized.description>
+  <!-- EN: cockatoo egg (unfert.) -->
+  <EggCockatooUnfertilized.label>cockatoo egg (unfert.)</EggCockatooUnfertilized.label>
+  <!-- EN: An unfertilized cockatoo egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggCockatooUnfertilized.description>An unfertilized cockatoo egg. It can be eaten raw, but it's much, much better cooked.</EggCockatooUnfertilized.description>
+  <!-- EN: eagle owl egg (fert.) -->
+  <EggEagleOwlFertilized.label>eagle owl egg (fert.)</EggEagleOwlFertilized.label>
+  <!-- EN: A fertilized eagle owl egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggEagleOwlFertilized.description>A fertilized eagle owl egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggEagleOwlFertilized.description>
+  <!-- EN: eagle owl egg (unfert.) -->
+  <EggEagleOwlUnfertilized.label>eagle owl egg (unfert.)</EggEagleOwlUnfertilized.label>
+  <!-- EN: An unfertilized eagle owl egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggEagleOwlUnfertilized.description>An unfertilized eagle owl egg. It can be eaten raw, but it's much, much better cooked.</EggEagleOwlUnfertilized.description>
+  <!-- EN: hornbill egg (fert.) -->
+  <EggHornbillFertilized.label>hornbill egg (fert.)</EggHornbillFertilized.label>
+  <!-- EN: A fertilized hornbill egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggHornbillFertilized.description>A fertilized hornbill egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggHornbillFertilized.description>
+  <!-- EN: hornbill egg (unfert.) -->
+  <EggHornbillUnfertilized.label>hornbill egg (unfert.)</EggHornbillUnfertilized.label>
+  <!-- EN: An unfertilized hornbill egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggHornbillUnfertilized.description>An unfertilized hornbill egg. It can be eaten raw, but it's much, much better cooked.</EggHornbillUnfertilized.description>
+  <!-- EN: kestrel egg (fert.) -->
+  <EggKestrelFertilized.label>kestrel egg (fert.)</EggKestrelFertilized.label>
+  <!-- EN: A fertilized kestrel egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggKestrelFertilized.description>A fertilized kestrel egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggKestrelFertilized.description>
+  <!-- EN: kestrel egg (unfert.) -->
+  <EggKestrelUnfertilized.label>kestrel egg (unfert.)</EggKestrelUnfertilized.label>
+  <!-- EN: An unfertilized kestrel egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggKestrelUnfertilized.description>An unfertilized kestrel egg. It can be eaten raw, but it's much, much better cooked.</EggKestrelUnfertilized.description>
+  <!-- EN: parrot egg (fert.) -->
+  <EggParrotBFertilized.label>parrot egg (fert.)</EggParrotBFertilized.label>
+  <!-- EN: A fertilized parrot egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggParrotBFertilized.description>A fertilized parrot egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggParrotBFertilized.description>
+  <!-- EN: parrot egg (unfert.) -->
+  <EggParrotBUnfertilized.label>parrot egg (unfert.)</EggParrotBUnfertilized.label>
+  <!-- EN: An unfertilized parrot egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggParrotBUnfertilized.description>An unfertilized parrot egg. It can be eaten raw, but it's much, much better cooked.</EggParrotBUnfertilized.description>
+  <!-- EN: parrot egg (fert.) -->
+  <EggParrotFertilized.label>parrot egg (fert.)</EggParrotFertilized.label>
+  <!-- EN: A fertilized parrot egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggParrotFertilized.description>A fertilized parrot egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggParrotFertilized.description>
+  <!-- EN: parrot egg (unfert.) -->
+  <EggParrotUnfertilized.label>parrot egg (unfert.)</EggParrotUnfertilized.label>
+  <!-- EN: An unfertilized parrot egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggParrotUnfertilized.description>An unfertilized parrot egg. It can be eaten raw, but it's much, much better cooked.</EggParrotUnfertilized.description>
+  <!-- EN: toucan egg (fert.) -->
+  <EggToucanFertilized.label>toucan egg (fert.)</EggToucanFertilized.label>
+  <!-- EN: A fertilized toucan egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked. -->
+  <EggToucanFertilized.description>A fertilized toucan egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</EggToucanFertilized.description>
+  <!-- EN: toucan egg (unfert.) -->
+  <EggToucanUnfertilized.label>toucan egg (unfert.)</EggToucanUnfertilized.label>
+  <!-- EN: An unfertilized toucan egg. It can be eaten raw, but it's much, much better cooked. -->
+  <EggToucanUnfertilized.description>An unfertilized toucan egg. It can be eaten raw, but it's much, much better cooked.</EggToucanUnfertilized.description>
+</LanguageData>

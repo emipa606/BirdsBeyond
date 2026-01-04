@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Kestrel -->
+  <BB_Kestrel.label>Kestrel</BB_Kestrel.label>
+  <!-- EN: A falcon noted for the prominent sexual dimorphism of their plumage, with the males having a blue-grey cap. The kestrel feeds almost exclusively upon small mammals, aided by its ability to see near ultraviolet light, and performs a characteristic hovering flight whilst hunting. -->
+  <BB_Kestrel.description>A falcon noted for the prominent sexual dimorphism of their plumage, with the males having a blue-grey cap. The kestrel feeds almost exclusively upon small mammals, aided by its ability to see near ultraviolet light, and performs a characteristic hovering flight whilst hunting.</BB_Kestrel.description>
+  <!-- EN: talons -->
+  <BB_Kestrel.tools.talons.label>talons</BB_Kestrel.tools.talons.label>
+  <!-- EN: beak -->
+  <BB_Kestrel.tools.beak.label>beak</BB_Kestrel.tools.beak.label>
+  <!-- EN: head -->
+  <BB_Kestrel.tools.head.label>head</BB_Kestrel.tools.head.label>
+</LanguageData>

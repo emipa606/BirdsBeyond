@@ -1,0 +1,94 @@
+ManifestFileVersion: 0
+CRC: 1837923167
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a2dd270f46e01cb08a9287dc87d1f1c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7a2dd270f46e01cb08a9287dc87d1f1c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Hornbill/Hornbill_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_flight_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot1_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/KestrelFemale_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Cockatoo/Cockatoo_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Hornbill/Hornbill_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/KestrelFemale_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Cockatoo/Cockatoo_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/Kestrel_north.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/Crow/Crow_call.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Crow/BB_Crow_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/Kestrel_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Toucan/Toucan_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Hornbill/Hornbill_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Crow/BB_Crow_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Toucan/Toucan_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Dessicated_Owl.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/WingFlap.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Toucan/Toucan_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/BarnOwl/BarnOwl_call.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Crow/BB_Crow_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Hornbill/Hornbill_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/EagleOwl/EagleOwl_call.ogg
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/BarnOwl/WingFlap.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot1_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Cockatoo/Cockatoo_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/EagleOwl/EagleOwl_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Cockatoo/Cockatoo_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Cockatoo/Cockatoo_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Dessicated_Kestrel.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Toucan/Toucan_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/Parrot/parrot_call.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Toucan/Toucan_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/KestrelFemale_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/Kestrel_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Crow/BB_Crow_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/Cockatoo/cockatoo_call.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/KestrelFemale_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/EagleOwl/EagleOwl_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/EagleOwl/EagleOwl_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/KestrelFemale_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/EagleOwl/EagleOwl_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Hornbill/Hornbill_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Toucan/Toucan_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_flight_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/Kestrel_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/EagleOwl/EagleOwl_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/Kestrel_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Crow/BB_Crow_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Cockatoo/Cockatoo_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Hornbill/Hornbill_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_flight_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/KestrelFemale_north.png
+- Assets/Data/Mlie.BirdsBeyond/Sounds/Pawn/Animal/Kestrel/Kestrel_call.ogg
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/BarnOwl/BarnOwl_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot1_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot_flight_1_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Kestrel/Kestrel_flight_1_north.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/EagleOwl/EagleOwl_east.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Crow/BB_Crow_flight_1_south.png
+- Assets/Data/Mlie.BirdsBeyond/Textures/Things/Pawn/Animal/Parrot/Parrot1_east.png
+Dependencies: []

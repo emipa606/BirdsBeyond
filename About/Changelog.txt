@@ -1,5 +1,8 @@
 # Changelog for BirdsBeyond
 
+1.6.0 - Updated to 1.6, uses the vanilla flight mechanic instead
+
+
 1.5.2 - Fixed non-flying pawns attack-actions
 
 

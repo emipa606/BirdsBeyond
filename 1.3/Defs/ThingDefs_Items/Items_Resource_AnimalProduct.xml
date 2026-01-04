@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Barn Owl -->
   <ThingDef ParentName="EggUnfertBase">
@@ -112,7 +112,7 @@
     <comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
-        <hatcherPawn>BB_Crow</hatcherPawn>
+        <hatcherPawn>Crow</hatcherPawn>
       </li>
     </comps>
   </ThingDef>

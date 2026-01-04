@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: eagle owl -->
+  <BB_EagleOwl.label>eagle owl</BB_EagleOwl.label>
+  <!-- EN: One of the largest species of owl, the eagle-owl has characteristic ear tufts, orange eyes and an 'Uhu' call that makes it instantly recognisable. Due to its large size, it can take a wide variety of prey but typically favours small mammals and birds. -->
+  <BB_EagleOwl.description>One of the largest species of owl, the eagle-owl has characteristic ear tufts, orange eyes and an 'Uhu' call that makes it instantly recognisable. Due to its large size, it can take a wide variety of prey but typically favours small mammals and birds.</BB_EagleOwl.description>
+  <!-- EN: talons -->
+  <BB_EagleOwl.tools.talons.label>talons</BB_EagleOwl.tools.talons.label>
+  <!-- EN: beak -->
+  <BB_EagleOwl.tools.beak.label>beak</BB_EagleOwl.tools.beak.label>
+  <!-- EN: head -->
+  <BB_EagleOwl.tools.head.label>head</BB_EagleOwl.tools.head.label>
+</LanguageData>

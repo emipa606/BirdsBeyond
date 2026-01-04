@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: hornbill -->
+  <BB_Hornbill.label>hornbill</BB_Hornbill.label>
+  <!-- EN: This big tropical bird has a very distinctive beak, hence it's name. They are often found roaming forests for fruit-carrying trees. -->
+  <BB_Hornbill.description>This big tropical bird has a very distinctive beak, hence it's name. They are often found roaming forests for fruit-carrying trees.</BB_Hornbill.description>
+  <!-- EN: talons -->
+  <BB_Hornbill.tools.talons.label>talons</BB_Hornbill.tools.talons.label>
+  <!-- EN: beak -->
+  <BB_Hornbill.tools.beak.label>beak</BB_Hornbill.tools.beak.label>
+  <!-- EN: head -->
+  <BB_Hornbill.tools.head.label>head</BB_Hornbill.tools.head.label>
+</LanguageData>
